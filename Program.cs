@@ -33,7 +33,7 @@ namespace BotsDock
             //HideConsole(); // throw error
 
 
-            var client = new TelegramBotClient("7666296387:AAGGL-H3E3MSdK0FpZ0e8g2nRWUyurOKo8U");
+            var client = new TelegramBotClient("");
             client.StartReceiving(Update, Error);
             Console.WriteLine($"[Info] Server is running");
             Console.ReadLine();
