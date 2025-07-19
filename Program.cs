@@ -32,8 +32,8 @@ namespace BotsDock
             //Console.Title = "Alchemy Utils";
             //HideConsole(); // throw error
 
-
-            var client = new TelegramBotClient("");
+            string token = File.ReadAllText("token.txt");
+            var client = new TelegramBotClient(token);
             client.StartReceiving(Update, Error);
             Console.WriteLine($"[Info] Server is running");
             Console.ReadLine();
